@@ -1,0 +1,79 @@
+<html>
+<style>
+	.container {
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	background: #55b9f3;
+}
+.neumorphism-1 {
+	height: 150px;
+	width: 150px;
+	border-radius: 50px;
+    background: linear-gradient(145deg, #5bc6ff, #4da7db);
+    box-shadow: 30px 30px 60px #489dcf, 
+            -30px -30px 60px #62d5ff;
+}
+.neumorphism-2 {
+	margin: 50px;
+	height: 150px;
+	width: 150px;
+	border-radius: 50px;
+    background: linear-gradient(145deg, #4da7db, #5bc6ff);
+    box-shadow: 30px 30px 60px #489dcf, 
+            -30px -30px 60px #62d5ff;
+}
+.neumorphism-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	width: 150px;
+	border-radius: 100%;
+    background: linear-gradient(145deg, #4da7db, #5bc6ff);
+    box-shadow: 30px 30px 60px #489dcf, 
+            -30px -30px 60px #62d5ff;
+	position: relative;
+}
+.neumorphism-3:after {
+	content: '';
+	position: absolute;
+	height: 80%;
+	width: 80%;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: inset -3px -3px 7px #62d5ff, inset 3px 3px 5px rgba(94, 104, 121, 0.671);
+}
+
+@media screen and (max-width: 767px) {
+   .container {
+	display: block;
+}
+.neumorphism-1 {
+	margin: auto;
+        width: 200px;
+        height: 200px;
+}
+.neumorphism-2 {
+	margin: 50px auto;
+        width: 200px;
+        height: 200px;
+}
+.neumorphism-3 {
+	margin: auto; 
+        width: 200px;
+        height: 200px;
+}
+}
+</style>
+<body>
+  <div class="container">
+    <div class="neumorphism-1"></div>
+    <div class="neumorphism-2"></div>
+    <div class="neumorphism-3"></div>
+  </div>
+</body>
+</html>
